@@ -1,21 +1,22 @@
 # NEUC Web Application Development Project
 
-This project is a group assignment for the Web Application Development course at New Era University College (NEUC). It implements a PHP & MySQL-based admin system with features such as product management, user management, order management, and message management.
+This project is a group assignment for the Web Application Development course at New Era University College (NEUC). It implements a PHP & MySQL-based admin system focused on **staff-side functionalities** such as product management, user management, order management, and message management.
+
+> **Note:** Customer-related pages (such as customer login and customer-facing features) are not the main focus of this project. The primary scope is on staff/admin functionalities.
 
 ## Project Structure
 
 ```
 WAD_Project/
 ├── about-us.php                # About Us page
-├── crud-product.php            # Product CRUD page
-├── CustomerLoginPage.php       # Customer login page
+├── crud-product.php            # Product CRUD page (staff)
 ├── DBhelper.php                # Database helper class
-├── index.php                   # Dashboard home
-├── order-list.php              # Order list page
+├── index.php                   # Dashboard home (staff)
+├── order-list.php              # Order list page (staff)
 ├── pages-crud-staff.php        # Staff management page
-├── pages-crud-user.php         # User management page
+├── pages-crud-user.php         # User management page (staff)
 ├── pages-faq.php               # FAQ page
-├── pages-received-message.php  # Message management page
+├── pages-received-message.php  # Message management page (staff)
 ├── staff-profile.php           # Staff profile page
 ├── StaffLoginPage.php          # Staff login page
 ├── update-status.php           # Status update endpoint
@@ -32,9 +33,9 @@ WAD_Project/
 └── groupassignment.sql         # Database schema and sample data
 ```
 
-## Main Features
+## Main Features (Staff Side)
 
-- **User/Staff Login**: Separate login for staff and customers.
+- **Staff Login**: Secure login for staff/admin users.
 - **Product Management**: CRUD operations for products, including image upload.
 - **User Management**: Staff can manage customer information.
 - **Staff Management**: Admin can manage staff accounts.
@@ -55,9 +56,8 @@ WAD_Project/
 3. **Database Configuration**
    - Edit the database connection settings in [`DBhelper.php`](WAD_Project/DBhelper.php) to match your environment.
 
-4. **Access Points**
+4. **Access Point**
    - Staff backend: [`StaffLoginPage.php`](WAD_Project/StaffLoginPage.php)
-   - Customer login: [`CustomerLoginPage.php`](WAD_Project/CustomerLoginPage.php)
 
 5. **Third-party Libraries**
    - All required frontend libraries are included in [`assets/vendor`](WAD_Project/assets/vendor).
@@ -76,4 +76,4 @@ WAD_Project/
 
 ---
 
-For further development or deployment questions, please contact the project team or your
+For further development or deployment questions, please contact the project
